@@ -4,11 +4,11 @@ matrix:
       if: tag IS NOT present
     - os: osx
       osx_image: xcode10.2
-      if: tag IS present
+      if: fork = false AND tag IS present
 
 language: node_js
 node_js: "12"
 
 script:
   - npm test
-  - if [ -n "$TRAVIS_TAG" ]; then npm run dist; fi
+  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then npm run dist; fi
