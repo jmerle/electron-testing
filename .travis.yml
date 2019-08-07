@@ -1,13 +1,15 @@
 matrix:
   include:
-    - if: tag IS NOT present
-      os: linux
-    - if: tag IS present
-      os: osx
+    - os: linux
+      dist: trusty
+      language: node_js
+      node_js: "12"
+      if: tag IS NOT present
+    - os: osx
       osx_image: xcode10.2
-
-language: node_js
-node_js: "12"
+      language: node_js
+      node_js: "12"
+      if: tag IS present
 
 jobs:
   include:
