@@ -1,8 +1,13 @@
-os: osx
-osx_image: xcode10.2
+matrix:
+  include:
+    - dist: bionic
+      if: tag IS NOT present
+    - os: osx
+      osx_image: xcode10.2
+      if: tag IS present
 
 language: node_js
-node_js: '12'
+node_js: "12"
 
 script:
   - npm test
