@@ -1,6 +1,6 @@
 matrix:
   include:
-    - dist: trusty
+    - os: linux
       if: tag IS NOT present
     - os: osx
       osx_image: xcode10.2
@@ -11,9 +11,4 @@ node_js: "12"
 
 script:
   - npm test
-
-deploy:
-  provider: script
-  script: npm run dist
-  on:
-    tags: true
+  - if [ -n "$TRAVIS_TAG" ]; then npm run dist; fi
