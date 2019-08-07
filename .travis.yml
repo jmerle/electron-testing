@@ -1,6 +1,6 @@
 matrix:
   include:
-    - dist: trusty
+    - os: linux
       if: tag IS NOT present
     - os: osx
       osx_image: xcode10.2
@@ -9,12 +9,15 @@ matrix:
 language: node_js
 node_js: "12"
 
-script:
-  - npm test
+jobs:
+  include:
+    - stage: lint
+      script: npm test
+    - stage: deploy
+      script: npm run dist
 
-deploy:
-  provider: script
-  script: npm run dist
-  on:
-    branch: master
-    tags: true
+stages:
+  - name: lint
+    if: tag IS NOT present
+  - name: deploy
+    if: tag IS present
