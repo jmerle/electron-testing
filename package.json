@@ -1,7 +1,7 @@
 {
 	"name": "electron-testing",
 	"productName": "Electron Testing",
-	"version": "1.1.2",
+	"version": "1.1.3",
 	"description": "Just trying out electron-updater",
 	"license": "MIT",
 	"repository": "jmerle/electron-testing",
