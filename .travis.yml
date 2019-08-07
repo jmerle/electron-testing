@@ -1,10 +1,10 @@
 matrix:
   include:
-    - os: linux
-      if: tag IS NOT present
-    - os: osx
+    - if: tag IS NOT present
+      os: linux
+    - if: tag IS present
+      os: osx
       osx_image: xcode10.2
-      if: tag IS present
 
 language: node_js
 node_js: "12"
