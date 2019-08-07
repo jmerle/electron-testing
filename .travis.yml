@@ -1,6 +1,6 @@
 matrix:
   include:
-    - dist: bionic
+    - dist: trusty
       if: tag IS NOT present
     - os: osx
       osx_image: xcode10.2
