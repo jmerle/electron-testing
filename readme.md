@@ -1,4 +1,4 @@
-# electron-boilerplate
+# electron-testing
 
 > Boilerplate to kickstart creating an app with [Electron](https://github.com/electron/electron)
 
@@ -27,7 +27,7 @@ See [Caprine](https://github.com/sindresorhus/caprine) for a production app base
 Alternatively, create a new directory and then run:
 
 ```
-$ curl -fsSL https://github.com/sindresorhus/electron-boilerplate/archive/master.tar.gz | tar -xz --strip-components 1
+$ curl -fsSL https://github.com/sindresorhus/electron-testing/archive/master.tar.gz | tar -xz --strip-components 1
 ```
 
 There's also a [Yeoman generator](https://github.com/sindresorhus/generator-electron).
@@ -40,9 +40,9 @@ There's also a [Yeoman generator](https://github.com/sindresorhus/generator-elec
 ---
 
 
-# App Name
+# Electron Testing
 
-> The best app ever
+> Just trying out electron-updater
 
 
 ## Install
@@ -51,17 +51,17 @@ There's also a [Yeoman generator](https://github.com/sindresorhus/generator-elec
 
 **macOS**
 
-[**Download**](https://github.com/user/repo/releases/latest) the `.dmg` file.
+[**Download**](https://github.com/jmerle/electron-testing/releases/latest) the `.dmg` file.
 
 **Linux**
 
-[**Download**](https://github.com/user/repo/releases/latest) the `.AppImage` or `.deb` file.
+[**Download**](https://github.com/jmerle/electron-testing/releases/latest) the `.AppImage` or `.deb` file.
 
 *The AppImage needs to be [made executable](http://discourse.appimage.org/t/how-to-make-an-appimage-executable/80) after download.*
 
 **Windows**
 
-[**Download**](https://github.com/user/repo/releases/latest) the `.exe` file.
+[**Download**](https://github.com/jmerle/electron-testing/releases/latest) the `.exe` file.
 
 
 ---

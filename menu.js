@@ -18,11 +18,11 @@ const showPreferences = () => {
 const helpSubmenu = [
 	openUrlMenuItem({
 		label: 'Website',
-		url: 'https://github.com/sindresorhus/electron-boilerplate'
+		url: 'https://github.com/jmerle/electron-testing'
 	}),
 	openUrlMenuItem({
 		label: 'Source Code',
-		url: 'https://github.com/sindresorhus/electron-boilerplate'
+		url: 'https://github.com/jmerle/electron-testing'
 	}),
 	{
 		label: 'Report an Issue…',
@@ -36,8 +36,8 @@ const helpSubmenu = [
 ${debugInfo()}`;
 
 			openNewGitHubIssue({
-				user: 'sindresorhus',
-				repo: 'electron-boilerplate',
+				user: 'jmerle',
+				repo: 'electron-testing',
 				body
 			});
 		}
