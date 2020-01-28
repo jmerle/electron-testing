@@ -40,7 +40,8 @@ const createMainWindow = async () => {
 
 	win.on('ready-to-show', () => {
 		win.show();
-		win.blur();
+		win.hide();
+      	win.showInactive();
 	});
 
 	win.on('closed', () => {
